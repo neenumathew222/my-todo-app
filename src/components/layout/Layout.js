@@ -45,7 +45,7 @@ const Layout = (props) => {
         if(url[1] !=='login' && url[1] !=='register'){
         if(!userInfo.loggedInStatus) history(`/login`)
         }
-    },[])
+    },[url])
     return (
         <Box className={classes.mainContainer}>
             <Grid container justifyContent="space-between" className={classes.headerContainer}>
